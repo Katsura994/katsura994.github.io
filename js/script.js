@@ -1,3 +1,4 @@
+clicked = true;
 $(document).ready(function(){
     //////////////////////////////////////
     //////////// Slider image
@@ -175,6 +176,21 @@ $(document).ready(function(){
         // alert(this);
         this.destroy();
             }, {offset: '80%'});
+    ////////////////////////////////////
+    /////////// Sidebar
+    $(".share-btn").click(function(){
+        if(clicked){
+            $(".social-links").css('left', '50px');
+            $( ".share-btn" ).addClass( "hide-links" );
+            $( ".share-btn" ).removeClass( "show-links" );
+            clicked  = false;
+        } else {
+            $(".social-links").css('left', '-50px');
+            $( ".share-btn" ).addClass( "show-links" );
+            $( ".share-btn" ).removeClass( "hide-links" );
+            clicked  = true;
+        }   
+    });
 })
 
 $(window).scroll(function() {
@@ -188,4 +204,13 @@ $('#return-to-top').click(function() {      // When arrow is clicked
     $('body,html').animate({
         scrollTop : 0                       // Scroll to top of body
     }, 1000);
+    
 });
+//////////////////////////////////////
+/////////// Preloader
+
+$(window).on('load', function() { // makes sure the whole site is loaded 
+    $('#status').fadeOut(); // will first fade out the loading animation 
+    $('#preloader').delay(1000).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+    $('body').delay(1000).css({'overflow':'visible'});
+  })

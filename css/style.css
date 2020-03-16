@@ -609,6 +609,107 @@ body {
       .card__price-value {
         font-size: 4rem; } }
 
+.social-links {
+  position: relative;
+  transition: 0.8s;
+  float: left;
+  background-color: #f1f1f1;
+  padding: 1rem 1rem;
+  left: -5rem; }
+
+.social-links ul {
+  margin: 0px;
+  padding: 0px; }
+
+.social-links ul li {
+  text-align: center;
+  list-style: none; }
+
+.social-links ul li:not(:last-child) {
+  padding-bottom: 0.5rem;
+  margin-bottom: .5rem;
+  border-bottom: 1px solid #5b8c5a; }
+
+.social-links ul li a .fab {
+  font-size: 3rem;
+  margin-left: 10rem; }
+
+.social-links ul li a i.fa-facebook {
+  color: #475993; }
+
+.social-links ul li a i.fa-twitter {
+  color: #55acee; }
+
+.social-links ul li a i.fa-google-plus {
+  color: #f73533; }
+
+.social-links ul li a i.fa-instagram {
+  color: #e43367; }
+
+.social-links ul li a i.fa-youtube {
+  color: #ed2124; }
+
+.social-links ul li a .fab:hover {
+  opacity: 0.8; }
+
+.social-links ul li a {
+  display: block;
+  height: 100%;
+  text-decoration: none; }
+
+.social-share {
+  position: fixed;
+  height: 20rem;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: -5rem;
+  z-index: 100; }
+
+.share-btn.hide-links {
+  transform: rotateZ(180deg) translate(-5rem);
+  position: relative;
+  left: 0rem; }
+
+.share-btn.show-links {
+  transition: 0.8s; }
+
+.share-btn {
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #5b8c5a;
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+  transition: 0.7s all ease-in;
+  color: #5b8c5a;
+  font-size: 25px; }
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 100000;
+  /* makes sure it stays on top */ }
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(../../img/deer.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */ }
+
 .four {
   padding-top: 6.4rem; }
   .four__container {
