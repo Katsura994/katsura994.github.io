@@ -22,6 +22,10 @@ html {
 body {
   box-sizing: border-box; }
 
+::selection {
+  background-color: #5b8c5a;
+  color: #fefefe; }
+
 .proba {
   height: 3000px; }
 
