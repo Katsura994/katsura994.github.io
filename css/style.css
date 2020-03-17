@@ -346,11 +346,10 @@ body {
       position: absolute;
       border-top: 2px solid #839898;
       border-radius: .5rem;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      min-width: 16rem;
+      box-shadow: 0px 0.8rem 1.6rem 0px rgba(0, 0, 0, 0.2);
       z-index: 1; }
     .tempnav__right .dropdown-content a {
-      color: black;
       padding: 1.2rem 1.6rem;
       text-decoration: none;
       display: block;
@@ -449,6 +448,78 @@ body {
       color: #5b8c5a !important; }
     .navbar__right a:hover {
       color: #839898 !important; }
+
+.seconddrop li {
+  float: none;
+  width: 100%; }
+
+.seconddrop .main-menu {
+  display: none; }
+
+#tm:checked + .main-menu {
+  display: block; }
+
+.seconddrop input[type="checkbox"],
+.seconddrop ul span.drop-icon {
+  display: none; }
+
+.seconddrop .sub-menu {
+  display: none;
+  position: absolute;
+  border-top: 2px solid #839898;
+  border-radius: .5rem;
+  min-width: 16rem;
+  box-shadow: 0rem 0.8rem 16rem 0px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  border-width: 1px 1px 0;
+  margin: 0 1em; }
+
+.seconddrop li,
+#toggle-menu,
+.seconddrop a {
+  position: relative;
+  display: block;
+  transition: all .125s ease-in-out;
+  -webkit-transition: all .125s ease-in-out;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.125); }
+
+.seconddrop .sub-menu {
+  display: none; }
+
+.seconddrop input[type="checkbox"]:checked + .sub-menu {
+  display: block; }
+
+.seconddrop .drop-icon {
+  line-height: 1; }
+
+.seconddrop label.drop-icon {
+  display: none; }
+
+.seconddrop .sub-menu {
+  border-width: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 3000; }
+
+.seconddrop .sub-menu,
+.seconddrop input[type="checkbox"]:checked + .sub-menu {
+  display: none; }
+
+.seconddrop .sub-menu li {
+  border-width: 0 0 1px; }
+
+.seconddrop .sub-menu .sub-menu {
+  top: 0;
+  left: 100%; }
+
+.seconddrop li:hover > input[type="checkbox"] + .sub-menu {
+  display: block; }
+
+.blacknav {
+  background-color: #333333;
+  color: #5b8c5a; }
 
 #return-to-top {
   position: fixed;
