@@ -662,27 +662,8 @@ body {
   height: 20rem;
   top: 50%;
   transform: translate(-50%, -50%);
-  left: -5rem;
+  left: 2.5rem;
   z-index: 100; }
-
-.share-btn.hide-links {
-  transform: rotateZ(180deg) translate(-5rem);
-  position: relative;
-  left: 0rem; }
-
-.share-btn.show-links {
-  transition: 0.8s; }
-
-.share-btn {
-  outline: none;
-  background-color: transparent;
-  border: 1px solid #5b8c5a;
-  width: 5rem;
-  height: 5rem;
-  position: relative;
-  transition: 0.7s all ease-in;
-  color: #5b8c5a;
-  font-size: 25px; }
 
 #preloader {
   position: fixed;

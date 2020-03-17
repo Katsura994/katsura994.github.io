@@ -178,19 +178,7 @@ $(document).ready(function(){
             }, {offset: '80%'});
     ////////////////////////////////////
     /////////// Sidebar
-    $(".share-btn").click(function(){
-        if(clicked){
-            $(".social-links").css('left', '50px');
-            $( ".share-btn" ).addClass( "hide-links" );
-            $( ".share-btn" ).removeClass( "show-links" );
-            clicked  = false;
-        } else {
-            $(".social-links").css('left', '-50px');
-            $( ".share-btn" ).addClass( "show-links" );
-            $( ".share-btn" ).removeClass( "hide-links" );
-            clicked  = true;
-        }   
-    });
+    
 })
 
 $(window).scroll(function() {
