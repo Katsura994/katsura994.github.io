@@ -84,7 +84,7 @@ $(document).ready(function(){
             }
         });
         
-        bar.animate(0.99);  // Number from 0.0 to 1.0
+        bar.animate(1.00);  // Number from 0.0 to 1.0
         /////////////////////////////////////////////  
         var bar1 = new ProgressBar.Circle('.progress2', {
         color: '#aaa',
@@ -113,7 +113,7 @@ $(document).ready(function(){
 
         }
         });
-        bar1.animate(0.90);  // Number from 0.0 to 1.0
+        bar1.animate(0.99);  // Number from 0.0 to 1.0
         /////////////////////////////////////////////////////
         var bar2 = new ProgressBar.Circle('.progress3', {
             color: '#aaa',
@@ -142,7 +142,7 @@ $(document).ready(function(){
         
             }
         });
-        bar2.animate(0.76);  // Number from 0.0 to 1.0
+        bar2.animate(0.99);  // Number from 0.0 to 1.0
         ///////////////////////////////////////////////////////
         var bar3 = new ProgressBar.Circle('.progress4', {
             color: '#aaa',
@@ -171,7 +171,7 @@ $(document).ready(function(){
         
             }
         });
-        bar3.animate(1);  // Number from 0.0 to 1.0
+        bar3.animate(1.00);  // Number from 0.0 to 1.0
         $('.progresstext').addClass('opacity');
         // alert(this);
         this.destroy();
